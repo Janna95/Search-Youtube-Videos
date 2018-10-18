@@ -16,11 +16,11 @@
     color: gray;
 }
 
-.next-page {
+.see-more {
    display: flex;
 }
 
-.next-page-btn {
+.see-more-btn {
     margin: 0 auto;
     background-color: #eceaeae6;
     border: none;

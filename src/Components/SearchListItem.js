@@ -21,7 +21,6 @@ class SearchListItem extends Component {
     const url = `https://www.youtube.com/embed/${videoId}`;
     const imgUrl = this.props.video.snippet.thumbnails.default.url;
 
-
     return (
         <div>
             <div className="list-item" onClick={this.openModal}>

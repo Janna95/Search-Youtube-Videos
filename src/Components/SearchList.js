@@ -24,9 +24,9 @@ class SearchList extends Component {
             />
           )
         }
-        <div className='next-page'>
+        <div className='see-more'>
           { this.props.videos.length >= 5 && 
-            <button onClick={() => this.props.searchNextPage(this.props.term, this.props.nextPageToken)} className='next-page-btn' >next page</button>
+            <button onClick={() => this.props.searchNextPage(this.props.term, this.props.nextPageToken)} className='see-more-btn' >see more</button>
           }
         </div>
 
