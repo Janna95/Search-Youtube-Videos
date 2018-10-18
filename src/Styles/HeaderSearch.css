@@ -1,0 +1,23 @@
+.header {
+    background: linear-gradient( to right bottom, #fc96d2, #98fcdf );
+}
+
+.search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input-text {
+    display: inline-block;
+    width: 40vw;
+    padding: 1vh 3vw;
+    border: none;
+    border-radius: 5vh;
+    margin: 2vh;
+    font-size: 120%;
+}
+
+.search-input-text:focus {
+    outline: 0;
+}

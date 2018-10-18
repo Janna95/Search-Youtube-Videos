@@ -1,0 +1,25 @@
+.modal-content {
+    width: 50vw;
+    height: auto;
+    border: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.btn-close {
+    background-color:  #c1cace; 
+    border: none;
+    color: white;
+    padding: 6px 22px;
+    font-size: 17px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn-close:hover {
+    background-color:   #9eaeb4; 
+}

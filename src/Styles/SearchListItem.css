@@ -1,0 +1,16 @@
+.list-item {
+    display: flex;
+    padding: 2%;
+    border-radius: 25px;
+    margin: 1%;
+    background-color: rgb(243, 245, 245);
+}
+
+.video-img {
+    padding-right: 2%;
+    cursor: pointer;
+}
+
+.video-details {
+    cursor: pointer;
+}
