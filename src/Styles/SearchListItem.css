@@ -4,13 +4,29 @@
     border-radius: 25px;
     margin: 1%;
     background-color: rgb(243, 245, 245);
+    cursor: pointer;
 }
 
 .video-img {
     padding-right: 2%;
-    cursor: pointer;
 }
 
-.video-details {
+.uploader-name {
+    font-size: 15px;
+    color: gray;
+}
+
+.next-page {
+   display: flex;
+}
+
+.next-page-btn {
+    margin: 0 auto;
+    background-color: #eceaeae6;
+    border: none;
+    padding: 5px 10px;
+    font-size: 17px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 14px;
 }

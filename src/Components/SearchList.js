@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import SearchListItem from './SearchListItem'
-import ModalComponent from './ModalComponent'
+import { connect } from 'react-redux';
 
 class SearchList extends Component {
 
   state = {
-    allVideos: [],
     modalIsOpen: false
     }
 
@@ -17,17 +16,24 @@ class SearchList extends Component {
     return (
       <div className='container'>
         {
-          this.props.allVideos.map((item) => 
+          !this.props.videos? null :
+          this.props.videos.map((item) => 
             <SearchListItem 
                 video={item}
-                key={item.id.videoId}
+                key={item.etag}
             />
           )
         }
+        <div className='next-page'>
+          { this.props.videos.length >= 5 && 
+            <button onClick={() => this.props.searchNextPage(this.props.term, this.props.nextPageToken)} className='next-page-btn' >next page</button>
+          }
+        </div>
 
       </div>
     );
   }
 }
 
-export default SearchList;
+
+export default connect()(SearchList);

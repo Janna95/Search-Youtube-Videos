@@ -33,11 +33,11 @@ class ModalComponent extends Component {
                 <div className='modal-content'>
                     <h4>{this.props.title}</h4>
                     <div className = "embed-responsive embed-responsive-16by9" >
-                        <iframe src={this.props.url}></iframe>
+                        <iframe src={this.props.url}  title='video playing...'></iframe>
                     </div>
                 </div>
                 <div className='btn'>
-                    <button onClick={this.props.closeModal} className='btn-close' >Close</button>
+                    <button onClick={this.props.closeModal} className='btn-close'>Close</button>
                 </div>
             </Modal>
         );

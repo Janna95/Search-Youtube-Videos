@@ -1,0 +1,12 @@
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+.inital-text {
+    margin: 0 auto;
+    font-family: cursive;
+    font-size: 250%;
+    padding-top: 35vh;
+    color: #8d8d8d;
+}

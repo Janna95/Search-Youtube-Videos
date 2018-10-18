@@ -23,15 +23,18 @@ class SearchListItem extends Component {
 
 
     return (
-        <div className="list-item">
-            <div className='video-img' onClick={this.openModal}>
-                <img  src={imgUrl} alt="video-image" />
-            </div>
+        <div>
+            <div className="list-item" onClick={this.openModal}>
+                <div className='video-img'>
+                    <img  src={imgUrl} alt="video cover" />
+                </div>
 
-            <div className="video-details" onClick={this.openModal}>
-                <h5>{this.props.video.snippet.title}</h5>
-                <p>{this.props.video.snippet.channelTitle}</p>
+                <div className="video-details">
+                    <h5>{this.props.video.snippet.title}</h5>
+                    <p className='uploader-name'>{this.props.video.snippet.channelTitle}</p>
+                </div>
             </div>
+            
             <ModalComponent 
                 modalIsOpen={this.state.modalIsOpen} 
                 url={url}
